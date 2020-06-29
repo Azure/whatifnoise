@@ -1,4 +1,4 @@
-# Microsoft.HealthcareApis
+# Microsoft.Appplatform
 
 Legend of noise types:
 
@@ -11,12 +11,18 @@ Legend of noise types:
 | Unknown      | The property is in Swagger, but noise type is unclear.                                        |
 | No Swagger   | The property does not exist in Swagger.                                                       |
 
-## services
+## spring
 
-![cleanliness](https://img.shields.io/badge/cleanliness-95.45%25%20(21%20/%2022)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-95.74%25%20(45%20/%2047)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
-### \$.properties.corsConfiguration
+### \$.properties.trace.appInsightInstrumentationKey
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2019-09-16  | Unknown             | Unknown               |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-05-01-preview | Unknown             | Unknown               |
+
+### \$.sku
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-05-01-preview | Unknown             | No Swagger            |

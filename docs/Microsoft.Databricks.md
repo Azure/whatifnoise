@@ -2,25 +2,18 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## workspaces
 
-![3.45%25](https://img.shields.io/badge/3.45%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
-
-### \$.properties.ManagedResourceGroupId
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-03-01  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+![cleanliness](https://img.shields.io/badge/cleanliness-18.92%25%20(14%20/%2074)-orange) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2060)-red)
 
 ### \$.properties.authorizations
 
@@ -42,12 +35,6 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-04-01  | Unknown             | No Swagger            |
 
-### \$.properties.createdBy
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Read-only             |
-
 ### \$.properties.createdDateTime
 
 | API version | Detected noise type | Determined noise type |
@@ -56,26 +43,20 @@ Legend of noise types:
 | 2018-03-15  | Unknown             | No Swagger            |
 | 2018-04-01  | Unknown             | No Swagger            |
 
-### \$.properties.managedResourceGroupId
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-03-01  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
-
 ### \$.properties.parameters
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-03-15  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.amlWorkspaceId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-03-15  | Unknown             | No Swagger            |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.customPrivateSubnetName
 
@@ -87,7 +68,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.customPublicSubnetName
 
@@ -99,7 +80,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.customVirtualNetworkId
 
@@ -111,7 +92,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.enableFedRampCertification
 
@@ -125,22 +106,32 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2018-03-01  | Unknown             | No Swagger            |
 | 2018-03-15  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
+
+### \$.properties.parameters.enableNoPublicIp.type
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-03-01  | Unknown             | No Swagger            |
+| 2018-03-15  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.loadBalancerBackendPoolName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-03-15  | Unknown             | No Swagger            |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.loadBalancerId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-03-15  | Unknown             | No Swagger            |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.relayNamespaceName
 
@@ -148,7 +139,7 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
 | 2018-03-15  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.resourceTags
 
@@ -156,7 +147,7 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
 | 2018-03-15  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.resourceTags.value.application
 
@@ -176,7 +167,7 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
 | 2018-03-15  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.storageAccountSkuName
 
@@ -184,7 +175,13 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
 | 2018-03-15  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
+
+### \$.properties.parameters.storageAccountSkuName.type
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.parameters.vnetAddressPrefix
 
@@ -192,13 +189,13 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-03-01  | Unknown             | No Swagger            |
 | 2018-03-15  | Unknown             | No Swagger            |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
-### \$.properties.updatedBy
+### \$.properties.storageAccountIdentity
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Read-only             |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.workspaceId
 
@@ -220,10 +217,10 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ### \$.tags.*
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | No Swagger            |

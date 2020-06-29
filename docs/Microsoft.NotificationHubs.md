@@ -1,47 +1,65 @@
-# Microsoft.NotificationHubs
+# Microsoft.Notificationhubs
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
+
+## namespaces/authorizationrules
+
+![cleanliness](https://img.shields.io/badge/cleanliness-93.75%25%20(15%20/%2016)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-04-01  | Unknown             | No Swagger            |
+
+## namespaces/notificationhubs/authorizationrules
+
+![cleanliness](https://img.shields.io/badge/cleanliness-93.75%25%20(15%20/%2016)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ## namespaces/notificationHubs
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-36.54%25%20(19%20/%2052)-yellow) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2033)-red)
 
 ### \$.properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.ApnsCredential
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
 
 ### \$.properties.GcmCredential
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
 
 ### \$.properties.apnsCredential
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2016-03-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.dailyApiCalls
 
@@ -84,23 +102,24 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2016-03-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2016-03-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.name
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.registrationTtl
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2016-03-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2016-03-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.status
 
@@ -115,24 +134,23 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2014-09-01  | Unknown             | No Swagger            |
-| 2016-03-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.tags.*
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ## namespaces
 
-![34.62%25](https://img.shields.io/badge/34.62%25-%E2%98%85★★%E2%98%86☆☆☆☆☆☆-yellow)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2026)-red)
 
 ### \$.kind
 
@@ -146,28 +164,28 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.createdAt
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Read-only             |
-| 2017-04-01  | Unknown             | Read-only             |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.critical
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Default (false)     | Default (false)       |
-| 2017-04-01  | Default (false)     | Default (false)       |
+| 2014-09-01  | Default (false)     | No Swagger            |
+| 2017-04-01  | Default (false)     | No Swagger            |
 
 ### \$.properties.enabled
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Default (true)      | Default (true)        |
-| 2017-04-01  | Default (true)      | Default (true)        |
+| 2014-09-01  | Default (true)      | No Swagger            |
+| 2017-04-01  | Default (true)      | No Swagger            |
 
 ### \$.properties.eventHubEnabled
 
@@ -179,48 +197,48 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.namespaceType
 
 | API version | Detected noise type          | Determined noise type |
 | ----------- | ---------------------------- | --------------------- |
-| 2017-04-01  | Default* ("NotificationHub") | Unknown               |
+| 2017-04-01  | Default* ("NotificationHub") | No Swagger            |
 
 ### \$.properties.region
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.serviceBusEndpoint
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2016-03-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2016-03-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.status
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2014-09-01  | Unknown             | Unknown               |
-| 2016-03-01  | Unknown             | Unknown               |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2016-03-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.updatedAt
 
-| API version | Detected noise type | Determined noise type                              |
-| ----------- | ------------------- | -------------------------------------------------- |
-| 2014-09-01  | Unknown             | No Swagger, Read-only (inheritted from 2017-04-01) |
-| 2016-03-01  | Unknown             | No Swagger, Read-only (inheritted from 2017-04-01) |
-| 2017-04-01  | Unknown             | Read-only                                          |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2014-09-01  | Unknown             | No Swagger            |
+| 2016-03-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2017-04-01  | Unknown             | No Swagger            |

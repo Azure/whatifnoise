@@ -2,20 +2,20 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## assessmentProjects/servercollectors
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%205)-red)
 
 ### \$.properties.agentProperties.id
 
@@ -49,7 +49,7 @@ Legend of noise types:
 
 ## assessmentprojects
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%204)-red)
 
 ### \$.properties.ProjectStatus
 
@@ -67,7 +67,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-05-01  | Default* (0)        | No Swagger            |
+| 2019-05-01  | Unknown             | No Swagger            |
 
 ### \$.properties.projectStatus
 
@@ -77,7 +77,7 @@ Legend of noise types:
 
 ## migrateProjects/solutions
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%205)-red)
 
 ### \$.properties.cleanupState
 
@@ -111,7 +111,7 @@ Legend of noise types:
 
 ## migrateProjects
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties
 
@@ -124,3 +124,39 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2019-06-01  | Unknown             | No Swagger            |
+
+## movecollections/moveresources
+
+!> No Swagger.
+
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%205)-red)
+
+### \$.location
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-10-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.isResolveRequired
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-10-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.moveStatus
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-10-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.resourceSettings.resourceType
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-10-01-preview | Unknown             | No Swagger            |
+
+### \$.tags
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-10-01-preview | Unknown             | No Swagger            |

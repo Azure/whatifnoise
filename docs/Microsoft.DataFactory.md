@@ -2,20 +2,20 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## dataFactories/datapipelines
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2010)-red)
 
 ### \$.properties.activities[*].scheduler
 
@@ -81,7 +81,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%204)-red)
 
 ### \$.properties.createTime
 
@@ -111,7 +111,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%206)-red)
 
 ### \$.properties.createTime
 
@@ -153,7 +153,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%205)-red)
 
 ### \$.properties.hubName
 
@@ -189,21 +189,30 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2015-09-01  | Unknown             | No Swagger            |
 | 2015-10-01  | Unknown             | No Swagger            |
-
-## factories/datasets
-
-![NaN%25](https://img.shields.io/badge/NaN%25--brightgreen)
 
 ## factories/integrationRuntimes
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2010)-red)
+
+### \$.location
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.managedVirtualNetwork.id
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.state
 
@@ -218,6 +227,12 @@ Legend of noise types:
 | ------------------ | ----------------------- | --------------------- |
 | 2017-09-01-preview | Default* ("**********") | No Swagger            |
 | 2018-06-01         | Default* ("**********") | No Swagger            |
+
+### \$.properties.typeProperties.ssisProperties.catalogInfo.catalogServerEndpoint
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.typeProperties.ssisProperties.customSetupScriptProperties.sasToken.value
 
@@ -234,7 +249,7 @@ Legend of noise types:
 
 ## factories/linkedServices
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2035)-red)
 
 ### \$.location
 
@@ -261,6 +276,18 @@ Legend of noise types:
 | 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.typeProperties.accountKey.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.typeProperties.apiKey
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.typeProperties.batchUri
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -328,7 +355,19 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.typeProperties.key
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
 ### \$.properties.typeProperties.passPhrase
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.typeProperties.passPhrase.value
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -365,7 +404,26 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.typeProperties.securityToken
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2017-09-01-preview | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+
 ### \$.properties.typeProperties.serviceEndpoint
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.typeProperties.servicePrincipalCredential
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.typeProperties.url
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -373,13 +431,14 @@ Legend of noise types:
 
 ### \$.tags
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | No Swagger            |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2017-09-01-preview | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
 
 ## factories/pipelines
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2053)-red)
 
 ### \$.location
 
@@ -388,6 +447,12 @@ Legend of noise types:
 | 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.activities[*].typeProperties.activities[*].typeProperties.ifTrueActivities[*].typeProperties.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.activities[*].typeProperties.source.storeSettings.modifiedDatetimeStart
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -405,13 +470,145 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.activities[*].typeProperties.extendedProperties.activityTrackers[*].TriggerStartTime
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.application-client-id.type
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.application-client-id.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.application-client-key.type
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.application-client-key.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.batchAccountKey
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.monitoring-db-connection-string.type
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.monitoring-db-connection-string.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.storageAccountKey
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.extendedProperties.triggerStartTime
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.ifFalseActivities[*].typeProperties.extendedProperties.activityTrackers[*].TriggerStartTime
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.ifFalseActivities[*].typeProperties.extendedProperties.dataInterfaceTrackers[*].TriggerStartTime
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.ifFalseActivities[*].typeProperties.extendedProperties.triggerStartTime
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.ifTrueActivities[*].typeProperties.parameters.delta_default_date
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
 ### \$.properties.activities[*].typeProperties.mlPipelineId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.activities[*].typeProperties.packageConnectionManagers.NEWDRSD.crmextr.Password.value.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.packageConnectionManagers.asazure://southcentralus.asazure.windows.net/nscl1epdb019.HospitalAccountDetails.Password.value.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.packageConnectionManagers.asazure://southcentralus.asazure.windows.net/nscl1epdb019.Password.value.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.packageConnectionManagers.asazure://southcentralus.asazure.windows.net/nscl1epdb019.ambulatory_flow.Password.value.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.packageConnectionManagers.asazure://southcentralus.asazure.windows.net/nscl1epdb019.datamodel_Inpatient_Flow.Password.value.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.packageConnectionManagers.ihazuresql004.database.windows.net.Pensieve.integrisadmin.Password.value.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
 ### \$.properties.activities[*].typeProperties.packageLocation.typeProperties.accessCredential.password.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.packageLocation.typeProperties.packagePassword.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.activities[*].typeProperties.projectParameters.SOLTANTHONYNOLANORGUK_Password.value.value
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -429,6 +626,12 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.activities[*].typeProperties.storeSettings.modifiedDatetimeEnd
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
 ### \$.properties.activities[*].typeProperties.storeSettings.modifiedDatetimeStart
 
 | API version | Detected noise type | Determined noise type |
@@ -436,6 +639,18 @@ Legend of noise types:
 | 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.activities[*].typeProperties.url
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.parameters.DateTimeTo.defaultValue
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.parameters.LastLoadTimestamp.defaultValue
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -495,6 +710,12 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.parameters.a37f605e3-8345-43a6-9278-c5cc143ec5a1-data-factory_connectionString.defaultValue.value
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
 ### \$.properties.parameters.a7213653f5dd14a91bd35abeeb865d81e-data-factory_connectionString.defaultValue.value
 
 | API version | Detected noise type | Determined noise type |
@@ -507,17 +728,48 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
-### \$.tags
+### \$.properties.parameters.delta_default_date.defaultValue
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.variables.v_target_end_time.defaultValue
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.variables.v_target_start_time.defaultValue
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.tags
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2017-09-01-preview | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+
 ## factories/triggers
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2011)-red)
 
 ### \$.location
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.pipeline.parameters.triggerStartTime
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.properties.pipelines[*].parameters.windowEnd
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -563,13 +815,13 @@ Legend of noise types:
 
 ## factories
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-75.00%25%20(15%20/%2020)-yellowgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%205)-red)
 
 ### \$.identity
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Unknown               |
+| 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.kind
 
@@ -579,14 +831,30 @@ Legend of noise types:
 
 ### \$.properties
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2017-09-01-preview | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.tags
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2017-09-01-preview | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.tags.*
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |
+
+## factories/managedvirtualnetworks
+
+!> No Swagger.
+
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+
+### \$.properties
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | No Swagger            |

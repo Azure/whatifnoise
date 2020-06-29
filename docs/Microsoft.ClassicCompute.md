@@ -2,20 +2,20 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## domainNames/deploymentSlots/state
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2017)-red)
 
 ### \$.properties
 
@@ -98,11 +98,17 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2015-06-01  | Unknown             | No Swagger            |
 
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2015-12-01  | Unknown             | No Swagger            |
+
 ## domainNames/deploymentSlots
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%20102)-red)
 
 ### \$.properties.Configuration
 
@@ -115,9 +121,10 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2014-06-01  | Unknown             | No Swagger            |
-| 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
+| 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.configuration
@@ -128,6 +135,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -148,6 +156,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -159,6 +168,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -169,6 +179,7 @@ Legend of noise types:
 | 2014-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.deploymentName
@@ -179,6 +190,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -189,6 +201,7 @@ Legend of noise types:
 | 2014-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -200,6 +213,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -211,6 +225,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -219,9 +234,9 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2014-06-01  | Unknown             | No Swagger            |
-| 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -240,6 +255,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -251,6 +267,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -262,6 +279,7 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 
@@ -273,21 +291,28 @@ Legend of noise types:
 | 2015-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 | 2017-11-15  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
+
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2014-06-01  | Unknown             | No Swagger            |
+| 2015-12-01  | Unknown             | No Swagger            |
 
 ## domainNames/serviceCertificates
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2022)-red)
 
 ### \$.location
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2014-06-01  | Unknown             | No Swagger            |
-| 2015-06-01  | Unknown             | No Swagger            |
 | 2016-11-01  | Unknown             | No Swagger            |
 
 ### \$.properties.certificateFormat
@@ -333,12 +358,13 @@ Legend of noise types:
 | 2014-06-01  | Unknown             | No Swagger            |
 | 2015-12-01  | Unknown             | No Swagger            |
 | 2016-04-01  | Unknown             | No Swagger            |
+| 2016-11-01  | Unknown             | No Swagger            |
 
 ## domainNames/slots
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2013)-red)
 
 ### \$.properties.configuration
 
@@ -422,7 +448,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2012)-red)
 
 ### \$.properties
 
@@ -460,7 +486,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2022)-red)
 
 ### \$.properties.debugProfile.bootDiagnosticsEnabled
 
@@ -598,7 +624,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
 ### \$.properties
 

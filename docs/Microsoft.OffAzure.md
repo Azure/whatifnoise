@@ -2,18 +2,18 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## hyperVSites/hosts
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%203)-red)
 
 ### \$.properties.createdTimestamp
 
@@ -35,7 +35,7 @@ Legend of noise types:
 
 ## hyperVSites
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties.agentDetails.id
 
@@ -53,9 +53,15 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2018)-red)
 
 ### \$.properties.OperatingSystemDetails
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-05-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.allocatedMemoryInMB
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
@@ -119,9 +125,33 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-05-01-preview | Default* (1)        | No Swagger            |
+| 2019-05-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.operatingSystemDetails
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-05-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.operatingSystemDetails.osArchitecture
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-05-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.operatingSystemDetails.osName
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-05-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.operatingSystemDetails.osType
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-05-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.operatingSystemDetails.osVersion
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
@@ -135,7 +165,7 @@ Legend of noise types:
 
 ## vMwareSites/vcenters
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%205)-red)
 
 ### \$.properties.createdTimestamp
 
@@ -169,7 +199,7 @@ Legend of noise types:
 
 ## vMwareSites
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties.agentDetails.id
 
@@ -187,7 +217,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
 ### \$.properties.serviceEndpoint
 
@@ -199,7 +229,7 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties.agentDetails.id
 

@@ -2,18 +2,18 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## namespaces/authorizationRules
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-0.00%25%20(0%20/%202)-red) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.location
 
@@ -29,7 +29,7 @@ Legend of noise types:
 
 ## namespaces/hybridConnections/authorizationRules
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-50.00%25%20(1%20/%202)-yellow) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
 ### \$.location
 
@@ -39,7 +39,7 @@ Legend of noise types:
 
 ## namespaces/hybridConnections
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-50.00%25%20(3%20/%206)-yellow) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%203)-red)
 
 ### \$.location
 
@@ -51,7 +51,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Default* (true)     | Unknown               |
+| 2017-04-01  | Default* (true)     | No Swagger            |
 
 ### \$.tags
 
@@ -61,23 +61,23 @@ Legend of noise types:
 
 ## namespaces/wcfRelays/authorizationRules
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-50.00%25%20(1%20/%202)-yellow) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
 ### \$.location
 
-| API version | Detected noise type  | Determined noise type |
-| ----------- | -------------------- | --------------------- |
-| 2017-04-01  | Default* ("West US") | No Swagger            |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ## namespaces/wcfRelays
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-55.56%25%20(5%20/%209)-yellow) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%204)-red)
 
 ### \$.location
 
-| API version | Detected noise type  | Determined noise type |
-| ----------- | -------------------- | --------------------- |
-| 2017-04-01  | Default* ("West US") | No Swagger            |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.path
 
@@ -89,17 +89,17 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.requiresTransportSecurity
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ## namespaces
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-11.11%25%20(1%20/%209)-orange) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%208)-red)
 
 ### \$.kind
 
@@ -111,7 +111,8 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2016-07-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.properties.namespaceType
 
@@ -129,10 +130,11 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-04-01  | Unknown             | Unknown               |
+| 2016-07-01  | Unknown             | No Swagger            |
+| 2017-04-01  | Unknown             | No Swagger            |
 
 ### \$.sku.tier
 
 | API version | Detected noise type   | Determined noise type |
 | ----------- | --------------------- | --------------------- |
-| 2017-04-01  | Default* ("Standard") | Unknown               |
+| 2017-04-01  | Default* ("Standard") | No Swagger            |

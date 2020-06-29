@@ -1,4 +1,4 @@
-# Microsoft.Peering
+# Microsoft.Datadog
 
 Legend of noise types:
 
@@ -11,12 +11,26 @@ Legend of noise types:
 | Unknown      | The property is in Swagger, but noise type is unclear.                                        |
 | No Swagger   | The property does not exist in Swagger.                                                       |
 
-## peerAsns
+## monitors
 
-![cleanliness](https://img.shields.io/badge/cleanliness-88.89%25%20(8%20/%209)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+!> No Swagger.
 
-### \$.properties.validationState
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%203)-red)
+
+### \$.properties.datadogOrganizationProperties.id
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2020-01-01-preview | Default* ("Failed") | Unknown               |
+| 2020-02-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.datadogOrganizationProperties.name
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2020-02-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.userInfo
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2020-02-01-preview | Unknown             | No Swagger            |

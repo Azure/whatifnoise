@@ -2,18 +2,18 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## deploymentScripts
 
-![15.38%25](https://img.shields.io/badge/15.38%25-%E2%98%85★%E2%98%86☆☆☆☆☆☆☆-orange)
+![cleanliness](https://img.shields.io/badge/cleanliness-85.57%25%20(83%20/%2097)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2014)-red)
 
 ### \$.properties.Arguments
 
@@ -25,19 +25,19 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Unknown               |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.cleanupPreference
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Unknown               |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.containerSettings
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Unknown               |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.containerSettings.restartPolicy
 
@@ -49,7 +49,7 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Unknown               |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.environmentVariables[*].SecureValue
 
@@ -67,37 +67,43 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Unknown               |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.outputs
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Read-only             |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.retentionInterval
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Unknown               |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.status
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Read-only             |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.timeout
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2019-10-01-preview | Unknown             | Unknown               |
+| 2019-10-01-preview | Unknown             | No Swagger            |
+
+### \$.tags
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2019-10-01-preview | Unknown             | No Swagger            |
 
 ## links
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%206)-red)
 
 ### \$.properties.sourceId
 
@@ -119,11 +125,16 @@ Legend of noise types:
 
 !> No Swagger.
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
+
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-05-01  | Unknown             | No Swagger            |
 
 ### \$.tags.*
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-05-01  | Unknown             | No Swagger            |
 | 2019-05-01  | Unknown             | No Swagger            |

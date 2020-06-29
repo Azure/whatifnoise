@@ -2,31 +2,30 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## vaults/backupFabrics/backupProtectionIntent
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2015)-red)
 
 ### \$.location
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-07-01  | Unknown             | Unknown               |
+| 2017-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.backupManagementType
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2017-07-01  | Unknown             | Unknown               |
-| 2018-01-10  | Unknown             | No Swagger            |
+| API version | Detected noise type     | Determined noise type |
+| ----------- | ----------------------- | --------------------- |
+| 2017-07-01  | Default ("AzureIaasVM") | No Swagger            |
 
 ### \$.properties.friendlyName
 
@@ -47,11 +46,18 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 
+### \$.properties.policyId
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-07-01  | Unknown             | No Swagger            |
+| 2018-01-10  | Unknown             | No Swagger            |
+
 ### \$.properties.protectionIntentItemType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-07-01  | Unknown             | Unknown               |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.protectionState
@@ -59,42 +65,39 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
-| 2017-07-01  | Unknown             | Unknown               |
-| 2018-01-10  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.sourceResourceId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | No Swagger            |
-| 2017-07-01  | Unknown             | Unknown               |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-07-01  | Unknown             | Unknown               |
+| 2017-07-01  | Unknown             | No Swagger            |
 
 ## vaults/backupFabrics/protectionContainers/protectedItems
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2091)-red)
 
 ### \$.location
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
-| 2018-07-10  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.backupManagementType
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
-| 2016-12-01  | Unknown             | No Swagger            |
-| 2018-07-10  | Unknown             | No Swagger            |
+| API version | Detected noise type     | Determined noise type |
+| ----------- | ----------------------- | --------------------- |
+| 2016-06-01  | Default ("AzureIaasVM") | No Swagger            |
+| 2016-12-01  | Default ("AzureIaasVM") | No Swagger            |
 
 ### \$.properties.containerName
 
@@ -102,7 +105,16 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
+
+### \$.properties.createMode
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.extendedInfo
 
@@ -116,7 +128,10 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.healthDetails
 
@@ -125,6 +140,8 @@ Legend of noise types:
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.healthStatus
 
@@ -132,7 +149,10 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.lastBackupErrorDetail
 
@@ -147,6 +167,8 @@ Legend of noise types:
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.lastBackupTime
 
@@ -154,15 +176,20 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.lastRecoveryPoint
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.parentName
 
@@ -180,8 +207,9 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.policyName
 
@@ -189,7 +217,10 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.protectedItemDataId
 
@@ -197,7 +228,10 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.protectedItemDataSourceId
 
@@ -215,7 +249,8 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
+| 2016-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.protectionState
 
@@ -223,7 +258,10 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.protectionStatus
 
@@ -231,7 +269,10 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.serverName
 
@@ -243,7 +284,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.virtualMachineId
 
@@ -251,25 +292,27 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-07-10  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.workloadType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
-| 2016-12-01  | Unknown             | No Swagger            |
-| 2018-07-10  | Unknown             | No Swagger            |
+| 2016-06-01  | Default ("VM")      | No Swagger            |
+| 2016-12-01  | Default ("VM")      | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | No Swagger            |
+| 2016-12-01  | Unknown             | No Swagger            |
 
 ## vaults/backupFabrics/protectionContainers
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2012)-red)
 
 ### \$.properties.extendedInfo
 
@@ -288,6 +331,7 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
+| 2016-12-01  | Unknown             | Unknown               |
 
 ### \$.properties.lastUpdatedTime
 
@@ -306,12 +350,20 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
+| 2016-12-01  | Unknown             | No Swagger            |
+
+### \$.properties.protectedItemCount
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2016-12-01  | Default* (1)        | No Swagger            |
 
 ### \$.properties.registrationStatus
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
+| 2016-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.workloadType
 
@@ -321,22 +373,23 @@ Legend of noise types:
 
 ## vaults/backupPolicies
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2072)-red)
 
 ### \$.location
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-11-10  | Unknown             | No Swagger            |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
-| 2019-06-15  | Unknown             | Unknown               |
+| 2017-07-01  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
 
 ### \$.properties.WorkloadType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.instantRpRetentionRangeInDays
 
@@ -344,6 +397,7 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2015-11-10  | Default (2)         | No Swagger            |
 | 2016-06-01  | Default (2)         | No Swagger            |
+| 2016-12-01  | Default (2)         | No Swagger            |
 | 2017-07-01  | Default (2)         | No Swagger            |
 | 2018-01-10  | Default (2)         | No Swagger            |
 
@@ -352,11 +406,12 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2015-11-10  | Unknown             | No Swagger            |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
 | 2016-12-01  | Unknown             | No Swagger            |
 | 2017-07-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
-| 2019-06-15  | Unknown             | Unknown               |
+| 2019-05-13  | Unknown             | No Swagger            |
+| 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.retentionPolicy.dailySchedule.retentionTimes
 
@@ -369,6 +424,7 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
+| 2016-12-01  | Unknown             | No Swagger            |
 | 2017-07-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
 
@@ -401,7 +457,6 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
-| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.retentionPolicy.weeklySchedule.retentionTimes[*]
@@ -409,7 +464,6 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
-| 2017-07-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.retentionPolicy.yearlySchedule.retentionTimes[*]
@@ -417,7 +471,6 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
-| 2017-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.schedulePolicy.scheduleRunTimes
 
@@ -430,6 +483,7 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
+| 2016-12-01  | Unknown             | No Swagger            |
 | 2017-07-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
 
@@ -442,6 +496,7 @@ Legend of noise types:
 | 2016-12-01  | Default (0)         | No Swagger            |
 | 2017-07-01  | Default (0)         | No Swagger            |
 | 2018-01-10  | Default (0)         | No Swagger            |
+| 2019-05-13  | Default (0)         | No Swagger            |
 | 2019-06-15  | Default (0)         | No Swagger            |
 
 ### \$.properties.settings.isCompression
@@ -569,29 +624,43 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Default* (0)        | No Swagger            |
+| 2016-06-01  | Default (0)         | No Swagger            |
+
+### \$.properties.timeZone
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2016-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.workLoadType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.workloadType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | No Swagger            |
+| 2019-05-13  | Unknown             | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
+| 2017-07-01  | Unknown             | No Swagger            |
 
 ## vaults/backupstorageconfig
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2012)-red)
+
+### \$.location
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2016-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.crossRegionRestoreFlag
 
@@ -611,12 +680,14 @@ Legend of noise types:
 
 | API version | Detected noise type           | Determined noise type |
 | ----------- | ----------------------------- | --------------------- |
+| 2016-12-01  | Default* ("LocallyRedundant") | No Swagger            |
 | 2018-01-10  | Default* ("LocallyRedundant") | No Swagger            |
 
 ### \$.properties.storageTypeState
 
 | API version | Detected noise type   | Determined noise type |
 | ----------- | --------------------- | --------------------- |
+| 2016-12-01  | Default* ("Unlocked") | No Swagger            |
 | 2018-01-10  | Default* ("Unlocked") | No Swagger            |
 
 ### \$.properties.xcoolState
@@ -626,9 +697,15 @@ Legend of noise types:
 | 2016-12-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
 
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2016-12-01  | Unknown             | No Swagger            |
+
 ## vaults/replicationFabrics/replicationNetworks/replicationNetworkMappings
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-90.91%25%20(20%20/%2022)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties.fabricSpecificDetails
 
@@ -640,11 +717,11 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ## vaults/replicationFabrics/replicationProtectionContainers/replicationMigrationItems
 
-![60.00%25](https://img.shields.io/badge/60.00%25-%E2%98%85★★★★★%E2%98%86☆☆☆-yellowgreen)
+![cleanliness](https://img.shields.io/badge/cleanliness-92.48%25%20(123%20/%20133)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2010)-red)
 
 ### \$.properties.providerSpecificDetails.disksToInclude
 
@@ -656,49 +733,49 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.protectedDisks
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.resyncRequired
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.resyncState
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetLocation
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetSubnetName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetVmSize
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vmNics
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.recoveryServicesProviderId
 
@@ -708,7 +785,7 @@ Legend of noise types:
 
 ## vaults/replicationFabrics/replicationProtectionContainers/replicationProtectionContainerMappings
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-98.28%25%20(57%20/%2058)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
 ### \$.properties.providerSpecificInput
 
@@ -718,18 +795,17 @@ Legend of noise types:
 
 ## vaults/replicationFabrics/replicationProtectionContainers
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-90.91%25%20(10%20/%2011)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
 ### \$.properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-08-10  | Unknown             | Unknown               |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ## vaults/replicationFabrics/replicationRecoveryServicesProviders
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-97.70%25%20(85%20/%2087)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties.authenticationIdentityInput
 
@@ -741,55 +817,72 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ## vaults/replicationFabrics
 
-![36.36%25](https://img.shields.io/badge/36.36%25-%E2%98%85★★★%E2%98%86☆☆☆☆☆-yellow)
+![cleanliness](https://img.shields.io/badge/cleanliness-92.59%25%20(225%20/%20243)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2018)-red)
 
 ### \$.properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2016-06-01  | Unknown             | No Swagger            |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.customDetails
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ### \$.properties.customDetails.containerIds
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
+| 2018-07-10  | Unknown             | No Swagger            |
+
+### \$.properties.customDetails.controlPlaneUri
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-01-10  | Unknown             | No Swagger            |
+| 2018-07-10  | Unknown             | No Swagger            |
+
+### \$.properties.customDetails.dataPlaneUri
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-01-10  | Unknown             | No Swagger            |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.customDetails.location
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.customDetails.serviceContainerId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-01-10  | Unknown             | No Swagger            |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.customDetails.serviceEndpoint
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.customDetails.serviceResourceId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-01-10  | Unknown             | Read-only             |
+| 2018-01-10  | Unknown             | No Swagger            |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.customDetails.srsServiceEndpoint
 
@@ -805,25 +898,33 @@ Legend of noise types:
 
 ## vaults/replicationPolicies
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-95.83%25%20(46%20/%2048)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | No Swagger            |
-| 2018-01-10  | Unknown             | Unknown               |
+| 2018-01-10  | Unknown             | No Swagger            |
+
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2016-08-10  | Unknown             | No Swagger            |
 
 ## vaults
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-55.17%25%20(16%20/%2029)-yellow) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2013)-red)
 
 ### \$.properties
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-06-01         | Unknown             | Unknown               |
+| 2015-11-10         | Unknown             | No Swagger            |
+| 2016-06-01         | Unknown             | No Swagger            |
+| 2016-12-01         | Unknown             | No Swagger            |
 | 2018-01-10         | Unknown             | No Swagger            |
+| 2018-07-10         | Unknown             | No Swagger            |
 | 2019-06-15         | Unknown             | No Swagger            |
 | 2020-02-02-preview | Unknown             | No Swagger            |
 
@@ -831,19 +932,21 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
 | 2018-01-10  | Unknown             | No Swagger            |
+| 2018-07-10  | Unknown             | No Swagger            |
 | 2019-06-15  | Unknown             | No Swagger            |
 
 ### \$.tags.*
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2016-06-01  | Unknown             | Unknown               |
+| 2016-06-01  | Unknown             | No Swagger            |
+| 2018-01-10  | Unknown             | No Swagger            |
 
 ## vaults/replicationFabrics/replicationProtectionContainers/replicationProtectedItems
 
-![72.15%25](https://img.shields.io/badge/72.15%25-%E2%98%85★★★★★★%E2%98%86☆☆-yellowgreen)
+![cleanliness](https://img.shields.io/badge/cleanliness-78.68%25%20(299%20/%20380)-yellowgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2081)-red)
 
 ### \$.properties.eventCorrelationId
 
@@ -855,19 +958,19 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.agentVersion
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.azureVmDiskDetails
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.azureVmGeneration
 
@@ -879,37 +982,37 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.discoveryType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.diskResized
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.diskType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.disksToInclude
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.encryption
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.firmwareType
 
@@ -921,13 +1024,13 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.initialPrimaryFabricLocation
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.initialPrimaryZone
 
@@ -939,121 +1042,127 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.initialReplicationDetails
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.ipAddress
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.isAgentUpdateRequired
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.isRebootAfterUpdateRequired
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
+
+### \$.properties.providerSpecificDetails.isReplicationAgentCertificateUpdateRequired
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-07-10  | Default* (false)    | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.isReplicationAgentUpdateRequired
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Default (false)     | Read-only             |
+| 2018-07-10  | Default (false)     | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.lastHeartbeat
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.lastRpoCalculatedTime
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.lastUpdateReceivedTime
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.licenseType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.logStorageAccountId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.managementId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.multiVmGroupCreateOption
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.multiVmGroupId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.multiVmGroupName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.multiVmSyncStatus
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.oSDetails
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.osDiskId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.osType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.osVersion
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.primaryAvailabilityZone
 
@@ -1065,43 +1174,43 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.processServerName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.protectedDisks
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.protectedManagedDisks
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.protectionStage
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAvailabilitySet
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAvailabilitySetId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAzureGeneration
 
@@ -1113,133 +1222,139 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAzureNetworkId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAzureResourceGroupId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAzureStorageAccount
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAzureVMName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAzureVMSize
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryAzureVmName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryContainerId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryFabricLocation
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.recoveryResourceGroupId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.replicaId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.resyncProgressPercentage
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Default (0)         | Read-only             |
+| 2018-07-10  | Default (0)         | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.rpoInSeconds
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.runAsAccountId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.sourceVmCpuCount
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.sourceVmRamSizeInMB
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
+
+### \$.properties.providerSpecificDetails.targetAvailabilitySetId
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetAzureNetworkId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetAzureSubnetId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetAzureV2ResourceGroupId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetAzureVmName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetStorageAccountId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetVmId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.targetVmSize
 
@@ -1251,70 +1366,70 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.useManagedDisks
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vCenterInfrastructureId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.validationErrors
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vhdId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vhdName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vmEncryptionType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vmId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vmManagedDisks
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Unknown               |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vmProtectionState
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vmProtectionStateDescription
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |
 
 ### \$.properties.providerSpecificDetails.vmSyncedConfigDetails
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-07-10  | Unknown             | Read-only             |
+| 2018-07-10  | Unknown             | No Swagger            |

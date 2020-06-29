@@ -1,4 +1,4 @@
-# Microsoft.Peering
+# Microsoft.Digitaltwins
 
 Legend of noise types:
 
@@ -11,12 +11,28 @@ Legend of noise types:
 | Unknown      | The property is in Swagger, but noise type is unclear.                                        |
 | No Swagger   | The property does not exist in Swagger.                                                       |
 
-## peerAsns
+## digitaltwinsinstances/endpoints
 
-![cleanliness](https://img.shields.io/badge/cleanliness-88.89%25%20(8%20/%209)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-66.67%25%20(4%20/%206)-yellowgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
-### \$.properties.validationState
+### \$.properties.connectionString-PrimaryKey
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2020-01-01-preview | Default* ("Failed") | Unknown               |
+| 2020-03-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.connectionString-SecondaryKey
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2020-03-01-preview | Unknown             | No Swagger            |
+
+## digitaltwinsinstances
+
+![cleanliness](https://img.shields.io/badge/cleanliness-85.71%25%20(6%20/%207)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+
+### \$.sku
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2020-03-01-preview | Unknown             | No Swagger            |

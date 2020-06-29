@@ -1,4 +1,4 @@
-# Microsoft.HealthcareApis
+# Microsoft.Datacatalog
 
 Legend of noise types:
 
@@ -11,12 +11,24 @@ Legend of noise types:
 | Unknown      | The property is in Swagger, but noise type is unclear.                                        |
 | No Swagger   | The property does not exist in Swagger.                                                       |
 
-## services
+## catalogs
 
-![cleanliness](https://img.shields.io/badge/cleanliness-95.45%25%20(21%20/%2022)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
-### \$.properties.corsConfiguration
+### \$.properties.users[*].permissions
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2019-09-16  | Unknown             | Unknown               |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-07-01-preview | Unknown             | No Swagger            |
+
+## datacatalogs
+
+!> No Swagger.
+
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
+
+### \$.properties
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2018-12-01-preview | Unknown             | No Swagger            |

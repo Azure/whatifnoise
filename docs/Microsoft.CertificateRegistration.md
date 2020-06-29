@@ -2,18 +2,18 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## certificateOrders/certificates
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-80.00%25%20(4%20/%205)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%201)-red)
 
 ### \$.properties.keyVaultSecretName
 
@@ -23,7 +23,7 @@ Legend of noise types:
 
 ## certificateOrders
 
-![40.00%25](https://img.shields.io/badge/40.00%25-%E2%98%85★★★%E2%98%86☆☆☆☆☆-yellow)
+![cleanliness](https://img.shields.io/badge/cleanliness-94.82%25%20(183%20/%20193)-brightgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2010)-red)
 
 ### \$.properties.DistinguishedName
 
@@ -35,52 +35,52 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Unknown             | Unknown               |
+| 2015-08-01  | Unknown             | No Swagger            |
 
 ### \$.properties.ValidityInYears
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Unknown             | Default (1)           |
+| 2015-08-01  | Unknown             | No Swagger            |
 
 ### \$.properties.autoRenew
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Default* (true)     | Default (true)        |
+| 2015-08-01  | Default* (true)     | No Swagger            |
 
 ### \$.properties.certificates
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Unknown             | Unknown               |
+| 2015-08-01  | Unknown             | No Swagger            |
 
 ### \$.properties.csr
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Unknown             | Unknown               |
+| 2015-08-01  | Unknown             | No Swagger            |
 
 ### \$.properties.distinguishedName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Unknown             | Unknown               |
+| 2015-08-01  | Unknown             | No Swagger            |
 
 ### \$.properties.keySize
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Default* (2048)     | Default (2048)        |
+| 2015-08-01  | Default* (2048)     | No Swagger            |
 
 ### \$.properties.productType
 
 | API version | Detected noise type                     | Determined noise type |
 | ----------- | --------------------------------------- | --------------------- |
-| 2015-08-01  | Default* ("StandardDomainValidatedSsl") | Unknown               |
+| 2015-08-01  | Default* ("StandardDomainValidatedSsl") | No Swagger            |
 
 ### \$.properties.validityInYears
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-08-01  | Default* (1)        | Default (1)           |
+| 2015-08-01  | Default* (1)        | No Swagger            |

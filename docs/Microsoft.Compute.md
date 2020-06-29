@@ -2,159 +2,177 @@
 
 Legend of noise types:
 
-| Noise type   | Description                                                                       |
-| ------------ | --------------------------------------------------------------------------------- |
-| Default      | The property has a default value.                                                 |
-| Default*     | The property may have a default value, but further investigation to confirm that. |
-| Read-only    | The property is read-only and should be excluded from What-If output.             |
-| Put-as-patch | The property value does not change when missing from PUT body.                    |
-| Unknown      | The property is in Swagger, but noise type is unclear.                            |
-| No Swagger   | The property does not exist in Swagger.                                           |
+| Noise type   | Description                                                                                   |
+| ------------ | --------------------------------------------------------------------------------------------- |
+| Default      | The property has a default value.                                                             |
+| Default*     | The property may have a default value, but further investigation is required to confirm that. |
+| Read-only    | The property is read-only and should be excluded from What-If output.                         |
+| Put-as-patch | The property value does not change when missing from PUT body.                                |
+| Unknown      | The property is in Swagger, but noise type is unclear.                                        |
+| No Swagger   | The property does not exist in Swagger.                                                       |
 
 ## availabilitySets
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-brightgreen) ![progress](https://img.shields.io/badge/progress-100.00%25%20(69%20/%2069)-brightgreen)
 
 ### \$.properties
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger            |
-| 2015-06-15         | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2017-12-01         | Unknown             | Unknown               |
+| API version        | Detected noise type | Determined noise type                                 |
+| ------------------ | ------------------- | ----------------------------------------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
+| 2015-06-15         | Unknown             | Put-as-patch                                          |
+| 2016-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-12-01         | Unknown             | Put-as-patch                                          |
+| 2019-07-01         | Unknown             | Put-as-patch                                          |
 
 ### \$.properties.PlatformFaultDomainCount
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2017-12-01  | Unknown             | Unknown               |
-| 2018-04-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
-| 2019-12-01  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2018-04-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.PlatformUpdateDomainCount
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2017-12-01  | Unknown             | Unknown               |
-| 2018-04-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
-| 2019-12-01  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2018-04-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.internalData
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | No Swagger            |
-| 2017-12-01  | Unknown             | No Swagger            |
+| 2015-06-15  | Unknown             | Put-as-patch          |
 
 ### \$.properties.internalData.pinnedFabricCluster
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | No Swagger            |
-| 2017-12-01  | Unknown             | No Swagger            |
-
-### \$.properties.managed
-
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.platformFaultDomainCount
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger            |
-| 2015-06-15         | Unknown             | Unknown               |
-| 2016-03-30         | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2017-12-01         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
+| API version        | Detected noise type | Determined noise type                                 |
+| ------------------ | ------------------- | ----------------------------------------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
+| 2015-06-15         | Unknown             | Put-as-patch                                          |
+| 2016-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-12-01         | Unknown             | Put-as-patch                                          |
+| 2018-04-01         | Unknown             | Put-as-patch                                          |
 
 ### \$.properties.platformUpdateDomainCount
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger            |
-| 2015-06-15         | Unknown             | Unknown               |
-| 2016-03-30         | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2017-12-01         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
-| 2018-10-01         | Unknown             | Unknown               |
-| 2019-03-01         | Unknown             | Unknown               |
-| 2019-07-01         | Unknown             | Unknown               |
-| 2019-12-01         | Unknown             | Unknown               |
+| API version        | Detected noise type | Determined noise type                                 |
+| ------------------ | ------------------- | ----------------------------------------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
+| 2015-06-15         | Unknown             | Put-as-patch                                          |
+| 2016-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-12-01         | Unknown             | Put-as-patch                                          |
+| 2018-04-01         | Unknown             | Put-as-patch                                          |
+| 2018-10-01         | Unknown             | Put-as-patch                                          |
+| 2019-03-01         | Unknown             | Put-as-patch                                          |
+| 2019-07-01         | Unknown             | Put-as-patch                                          |
+| 2019-12-01         | Unknown             | Put-as-patch                                          |
 
 ### \$.properties.virtualMachines
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger            |
-| 2015-06-15         | Unknown             | Unknown               |
-| 2016-03-30         | Unknown             | Unknown               |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2017-12-01         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
-| 2018-10-01         | Unknown             | Unknown               |
-| 2019-03-01         | Unknown             | Unknown               |
-| 2019-07-01         | Unknown             | Unknown               |
-| 2019-12-01         | Unknown             | Unknown               |
+| API version        | Detected noise type | Determined noise type                                 |
+| ------------------ | ------------------- | ----------------------------------------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
+| 2015-06-15         | Unknown             | Put-as-patch                                          |
+| 2016-03-30         | Unknown             | Put-as-patch                                          |
+| 2016-04-30-preview | Unknown             | Put-as-patch                                          |
+| 2017-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-12-01         | Unknown             | Put-as-patch                                          |
+| 2018-04-01         | Unknown             | Put-as-patch                                          |
+| 2018-06-01         | Unknown             | Put-as-patch                                          |
+| 2018-10-01         | Unknown             | Put-as-patch                                          |
+| 2019-03-01         | Unknown             | Put-as-patch                                          |
+| 2019-07-01         | Unknown             | Put-as-patch                                          |
+| 2019-12-01         | Unknown             | Put-as-patch                                          |
+| 2020-06-01         | Unknown             | Put-as-patch                                          |
 
 ### \$.properties.virtualMachines[*]
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | No Swagger            |
+| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachines[*].id
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | No Swagger            |
-| 2019-07-01  | Unknown             | No Swagger            |
+| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.sku
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2017-12-01         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2017-03-30         | Unknown             | Put-as-patch          |
+| 2017-12-01         | Unknown             | Put-as-patch          |
+| 2018-04-01         | Unknown             | Put-as-patch          |
+| 2018-06-01         | Unknown             | Put-as-patch          |
+| 2019-07-01         | Unknown             | Put-as-patch          |
 
 ### \$.sku.name
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | Put-as-patch          |
 
 ### \$.tags
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
-| 2018-10-01         | Unknown             | Unknown               |
-| 2019-03-01         | Unknown             | Unknown               |
-| 2019-07-01         | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2017-03-30         | Unknown             | Put-as-patch          |
+| 2017-12-01         | Unknown             | Put-as-patch          |
+| 2018-06-01         | Unknown             | Put-as-patch          |
+| 2018-10-01         | Unknown             | Put-as-patch          |
+| 2019-03-01         | Unknown             | Put-as-patch          |
+| 2019-07-01         | Unknown             | Put-as-patch          |
+
+### \$.tags.*
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2019-03-01         | Unknown             | Put-as-patch          |
+| 2019-07-01         | Unknown             | Put-as-patch          |
+
+## diskencryptionsets
+
+![cleanliness](https://img.shields.io/badge/cleanliness-85.71%25%20(12%20/%2014)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
+
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.tags.*
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ## disks
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2074)-red)
 
 ### \$.managedByExtended
 
@@ -172,25 +190,20 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
-| 2019-07-01         | Unknown             | Unknown               |
-| 2019-11-01         | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | No Swagger            |
 
 ### \$.properties.creationData.sourceURI
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | No Swagger            |
 
 ### \$.properties.creationData.sourceUri
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.diskIOPSReadOnly
 
@@ -203,11 +216,12 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Unknown               |
-| 2018-09-30  | Unknown             | Unknown               |
-| 2019-03-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
-| 2019-11-01  | Unknown             | Unknown               |
+| 2018-06-01  | Unknown             | No Swagger            |
+| 2018-09-30  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-11-01  | Unknown             | No Swagger            |
+| 2020-05-01  | Unknown             | No Swagger            |
 
 ### \$.properties.diskMBpsReadOnly
 
@@ -220,24 +234,26 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Unknown               |
-| 2018-09-30  | Unknown             | Unknown               |
-| 2019-03-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
-| 2019-11-01  | Unknown             | Unknown               |
+| 2018-06-01  | Unknown             | No Swagger            |
+| 2018-09-30  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-11-01  | Unknown             | No Swagger            |
+| 2020-05-01  | Unknown             | No Swagger            |
 
 ### \$.properties.diskSizeGB
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
-| 2018-09-30         | Unknown             | Unknown               |
-| 2019-03-01         | Unknown             | Unknown               |
-| 2019-07-01         | Unknown             | Unknown               |
-| 2019-11-01         | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2018-04-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-09-30         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
+| 2019-11-01         | Unknown             | No Swagger            |
+| 2020-05-01         | Unknown             | No Swagger            |
 
 ### \$.properties.diskState
 
@@ -252,22 +268,25 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
-| 2019-11-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-11-01  | Unknown             | No Swagger            |
+| 2020-05-01  | Unknown             | No Swagger            |
 
 ### \$.properties.encryptionSettingsCollection
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-09-30  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2018-09-30  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.hyperVGeneration
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-09-30  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2018-09-30  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-11-01  | Unknown             | No Swagger            |
+| 2020-05-01  | Unknown             | No Swagger            |
 
 ### \$.properties.maxShares
 
@@ -276,18 +295,25 @@ Legend of noise types:
 | 2019-03-01  | Default* (1)        | No Swagger            |
 | 2019-07-01  | Default* (1)        | No Swagger            |
 
+### \$.properties.networkAccessPolicy
+
+| API version | Detected noise type   | Determined noise type |
+| ----------- | --------------------- | --------------------- |
+| 2020-05-01  | Default* ("AllowAll") | No Swagger            |
+
 ### \$.properties.osType
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
-| 2018-09-30         | Unknown             | Unknown               |
-| 2019-03-01         | Unknown             | Unknown               |
-| 2019-07-01         | Unknown             | Unknown               |
-| 2019-11-01         | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2018-04-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-09-30         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
+| 2019-11-01         | Unknown             | No Swagger            |
+| 2020-05-01         | Unknown             | No Swagger            |
 
 ### \$.properties.readOnly
 
@@ -300,57 +326,62 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2018-04-01  | Unknown             | Unknown               |
-| 2018-06-01  | Unknown             | Unknown               |
-| 2018-09-30  | Unknown             | Unknown               |
-| 2019-03-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2018-04-01  | Unknown             | No Swagger            |
+| 2018-06-01  | Unknown             | No Swagger            |
+| 2018-09-30  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.sku.name
 
 | API version | Detected noise type      | Determined noise type |
 | ----------- | ------------------------ | --------------------- |
-| 2019-07-01  | Default* ("Premium_LRS") | Unknown               |
+| 2019-07-01  | Default* ("Premium_LRS") | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2018-04-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2018-04-01  | Unknown             | No Swagger            |
+| 2018-06-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.tags.*
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2018-06-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-09-30         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
 
 ## galleries/images/versions
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-74.60%25%20(47%20/%2063)-yellowgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2016)-red)
 
 ### \$.properties.publishingProfile.endOfLifeDate
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.publishingProfile.storageAccountType
 
 | API version | Detected noise type       | Determined noise type |
 | ----------- | ------------------------- | --------------------- |
-| 2019-07-01  | Default* ("Standard_LRS") | Unknown               |
+| 2019-07-01  | Default* ("Standard_LRS") | No Swagger            |
+| 2019-12-01  | Default* ("Standard_LRS") | No Swagger            |
 
 ### \$.properties.publishingProfile.targetRegions
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.publishingProfile.targetRegions[*].name
 
@@ -358,6 +389,7 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | No Swagger            |
 | 2019-07-01  | Unknown             | No Swagger            |
+| 2019-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.publishingProfile.targetRegions[*].regionalReplicaCount
 
@@ -366,59 +398,70 @@ Legend of noise types:
 | 2018-06-01  | Default (1)         | No Swagger            |
 | 2019-07-01  | Default (1)         | No Swagger            |
 
+### \$.properties.storageProfile.dataDiskImages
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-12-01  | Unknown             | No Swagger            |
+
 ### \$.properties.storageProfile.osDiskImage
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-12-01  | Unknown             | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ## galleries/images
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-87.23%25%20(41%20/%2047)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%206)-red)
 
 ### \$.properties.endOfLifeDate
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-12-01  | Unknown             | Unknown               |
+| 2018-06-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.hyperVGeneration
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-12-01  | Default* ("V1")     | Unknown               |
+| 2019-07-01  | Default* ("V1")     | No Swagger            |
+| 2019-12-01  | Default* ("V1")     | No Swagger            |
 
 ### \$.tags.*
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ## galleries
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-66.67%25%20(4%20/%206)-yellowgreen) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Unknown               |
+| 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Unknown               |
+| 2019-03-01  | Unknown             | No Swagger            |
 
 ## hostgroups/hosts
 
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%202)-red)
 
 ### \$.properties
 
@@ -434,13 +477,19 @@ Legend of noise types:
 
 ## images
 
-![34.78%25](https://img.shields.io/badge/34.78%25-%E2%98%85★★%E2%98%86☆☆☆☆☆☆-yellow)
+![cleanliness](https://img.shields.io/badge/cleanliness-9.09%25%20(3%20/%2033)-red) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2030)-red)
+
+### \$.properties.hyperVGeneration
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-03-01  | Default* ("V1")     | No Swagger            |
 
 ### \$.properties.storageProfile.dataDisks
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | No Swagger            |
 
 ### \$.properties.storageProfile.dataDisks[*].caching
 
@@ -471,100 +520,123 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Default ("None")    | Default ("None")      |
-| 2017-03-30         | Default ("None")    | Default ("None")      |
-| 2018-06-01         | Default ("None")    | Default ("None")      |
-| 2018-10-01         | Default ("None")    | Default ("None")      |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
 
 ### \$.properties.storageProfile.osDisk.diskSizeGB
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
-| 2018-10-01         | Unknown             | Unknown               |
-| 2019-03-01         | Unknown             | Unknown               |
-| 2019-12-01         | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2017-12-01         | Unknown             | No Swagger            |
+| 2018-04-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
+| 2019-12-01         | Unknown             | No Swagger            |
+
+### \$.properties.storageProfile.osDisk.managedDisk
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-03-01  | Unknown             | No Swagger            |
 
 ### \$.properties.storageProfile.osDisk.managedDisk.id
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | No Swagger            |
 
 ### \$.properties.storageProfile.osDisk.osState
 
-| API version        | Detected noise type     | Determined noise type   |
-| ------------------ | ----------------------- | ----------------------- |
-| 2016-04-30-preview | Default ("Generalized") | Default ("Generalized") |
-| 2017-03-30         | Default ("Generalized") | Default ("Generalized") |
-| 2019-03-01         | Default ("Generalized") | Default ("Generalized") |
+| API version        | Detected noise type     | Determined noise type |
+| ------------------ | ----------------------- | --------------------- |
+| 2016-04-30-preview | Default ("Generalized") | No Swagger            |
+| 2017-03-30         | Default ("Generalized") | No Swagger            |
+| 2019-03-01         | Default ("Generalized") | No Swagger            |
+
+### \$.properties.storageProfile.osDisk.osType
+
+| API version | Detected noise type  | Determined noise type |
+| ----------- | -------------------- | --------------------- |
+| 2019-03-01  | Default* ("Windows") | No Swagger            |
 
 ### \$.properties.storageProfile.osDisk.storageAccountType
 
-| API version | Detected noise type      | Determined noise type    |
-| ----------- | ------------------------ | ------------------------ |
-| 2017-03-30  | Default ("Standard_LRS") | Default ("Standard_LRS") |
-
-### \$.tags.*
-
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-
-## proximityPlacementGroups
-
-![0.00%25](https://img.shields.io/badge/0.00%25-%E2%98%86☆☆☆☆☆☆☆☆☆-red)
-
-### \$.properties
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Unknown               |
-| 2019-03-01  | Unknown             | Unknown               |
+| API version | Detected noise type      | Determined noise type |
+| ----------- | ------------------------ | --------------------- |
+| 2017-03-30  | Default ("Standard_LRS") | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
+
+### \$.tags.*
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+
+## proximityPlacementGroups
+
+![cleanliness](https://img.shields.io/badge/cleanliness-87.88%25%20(29%20/%2033)-green) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%204)-red)
+
+### \$.properties
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-04-01  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+
+### \$.tags
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-04-01  | Unknown             | No Swagger            |
 
 ## snapshots
 
-![7.41%25](https://img.shields.io/badge/7.41%25-%E2%98%85%E2%98%86☆☆☆☆☆☆☆☆-red)
+![cleanliness](https://img.shields.io/badge/cleanliness-40.74%25%20(22%20/%2054)-yellow) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%2032)-red)
 
 ### \$.properties.accountType
 
-| API version        | Detected noise type      | Determined noise type    |
-| ------------------ | ------------------------ | ------------------------ |
-| 2016-04-30-preview | Default ("Standard_LRS") | Default ("Standard_LRS") |
+| API version        | Detected noise type      | Determined noise type |
+| ------------------ | ------------------------ | --------------------- |
+| 2016-04-30-preview | Default ("Standard_LRS") | No Swagger            |
 
 ### \$.properties.creationData.sourceResourceId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2019-03-01  | Unknown             | Unknown               |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.creationData.sourceUri
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2019-03-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.diskSizeGB
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
-| 2018-06-01         | Unknown             | Unknown               |
-| 2019-03-01         | Unknown             | Unknown               |
-| 2019-07-01         | Unknown             | Unknown               |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2018-04-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
+| 2020-05-01         | Unknown             | No Swagger            |
 
 ### \$.properties.diskState
 
@@ -576,67 +648,67 @@ Legend of noise types:
 | 2018-06-01         | Unknown             | No Swagger            |
 | 2019-03-01         | Unknown             | No Swagger            |
 | 2019-07-01         | Unknown             | No Swagger            |
+| 2020-05-01         | Unknown             | No Swagger            |
 
 ### \$.properties.encryption
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2020-05-01  | Unknown             | No Swagger            |
 
 ### \$.properties.encryptionSettingsCollection
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Unknown               |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.hyperVGeneration
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
-
-### \$.properties.incremental
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Default (false)     | Default (false)       |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.osType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2020-05-01  | Unknown             | No Swagger            |
 
 ### \$.sku
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2018-06-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.tags
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Unknown               |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ## virtualMachines/extensions
 
-![87.02%25](https://img.shields.io/badge/87.02%25-%E2%98%85★★★★★★★★%E2%98%86-green)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-blue) ![progress](https://img.shields.io/badge/progress-0.00%25%20(0%20/%20155)-red)
 
 ### \$.properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.*
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2015-06-15  | Unknown             | No Swagger            |
+| 2016-03-30  | Unknown             | No Swagger            |
 | 2017-03-30  | Unknown             | No Swagger            |
 | 2018-06-01  | Unknown             | No Swagger            |
 | 2018-10-01  | Unknown             | No Swagger            |
@@ -645,90 +717,96 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.ProtectedSettings
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Unknown               |
-| 2018-10-01  | Unknown             | Unknown               |
-| 2019-07-01  | Unknown             | Unknown               |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.Publisher
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.Settings
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.Type
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.TypeHandlerVersion
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.autoUpgradeMinorVersion
 
-| API version        | Detected noise type | Determined noise type                                 |
-| ------------------ | ------------------- | ----------------------------------------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
-| 2015-06-15         | Unknown             | Put-as-patch                                          |
-| 2016-03-30         | Unknown             | Put-as-patch                                          |
-| 2016-04-30-preview | Unknown             | Put-as-patch                                          |
-| 2017-03-30         | Unknown             | Put-as-patch                                          |
-| 2017-12-01         | Unknown             | Put-as-patch                                          |
-| 2018-06-01         | Unknown             | Put-as-patch                                          |
-| 2018-10-01         | Unknown             | Put-as-patch                                          |
-| 2019-03-01         | Unknown             | Put-as-patch                                          |
-| 2019-07-01         | Unknown             | Put-as-patch                                          |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger            |
+| 2015-06-15         | Unknown             | No Swagger            |
+| 2016-03-30         | Unknown             | No Swagger            |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2017-12-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
 
 ### \$.properties.autoupgrademinorversion
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+
+### \$.properties.enableAutomaticUpgrade
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Default* (true)     | No Swagger            |
 
 ### \$.properties.forceUpdateTag
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.instanceView
 
-| API version        | Detected noise type | Determined noise type                              |
-| ------------------ | ------------------- | -------------------------------------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger, Read-only (inheritted from 2015-06-15) |
-| 2015-06-15         | Unknown             | Read-only                                          |
-| 2016-03-30         | Unknown             | Read-only                                          |
-| 2016-04-30-preview | Unknown             | Read-only                                          |
-| 2017-03-30         | Unknown             | Read-only                                          |
-| 2017-12-01         | Unknown             | Read-only                                          |
-| 2018-04-01         | Unknown             | Read-only                                          |
-| 2018-06-01         | Unknown             | Read-only                                          |
-| 2018-10-01         | Unknown             | Read-only                                          |
-| 2019-03-01         | Unknown             | Read-only                                          |
-| 2019-07-01         | Unknown             | Read-only                                          |
-| 2019-12-01         | Unknown             | Read-only                                          |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger            |
+| 2015-06-15         | Unknown             | No Swagger            |
+| 2016-03-30         | Unknown             | No Swagger            |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2017-12-01         | Unknown             | No Swagger            |
+| 2018-04-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
+| 2019-12-01         | Unknown             | No Swagger            |
 
 ### \$.properties.migrationInfo
 
@@ -740,228 +818,290 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger            |
-| 2015-06-15         | Unknown             | Unknown               |
-| 2016-03-30         | Unknown             | Unknown               |
-| 2016-04-30-preview | Unknown             | Unknown               |
-| 2017-03-30         | Unknown             | Unknown               |
-| 2018-04-01         | Unknown             | Unknown               |
-| 2018-10-01         | Unknown             | Unknown               |
-
-### \$.properties.publisher
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15         | Unknown             | No Swagger            |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2018-04-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
 
 ### \$.properties.settings
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.AADClientID
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2016-04-30-preview | Unknown             | No Swagger            |
 
 ### \$.properties.settings.EncryptionOperation
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+
+### \$.properties.settings.Exclusions
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-03-30  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.KeyEncryptionAlgorithm
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+
+### \$.properties.settings.KeyEncryptionKeyURL
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.KeyVaultURL
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
-| 2017-03-30         | Unknown             | Put-as-patch          |
-| 2018-10-01         | Unknown             | Put-as-patch          |
-| 2019-07-01         | Unknown             | Put-as-patch          |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
 
 ### \$.properties.settings.Properties
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.Properties.externalfqdn
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.Properties[*].Value
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2017-12-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2017-12-01  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-12-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.Restart
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.ScheduledScanSettings.scanType
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-03-30  | Unknown             | No Swagger            |
+
+### \$.properties.settings.WadCfg.DiagnosticMonitorConfiguration.DiagnosticInfrastructureLogs.scheduledTransferLogLevelFilter
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.WadCfg.DiagnosticMonitorConfiguration.DiagnosticInfrastructureLogs.scheduledTransferPeriod
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.WadCfg.DiagnosticMonitorConfiguration.Directories
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.WadCfg.DiagnosticMonitorConfiguration.PerformanceCounters.PerformanceCounterConfiguration[*]
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.WadCfg.DiagnosticMonitorConfiguration.WindowsEventLog.DataSource[*].name
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.WadCfg.SinksConfig.Sink[*].ApplicationInsights
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.WadCfg.SinksConfig.Sink[*].EventHub.SharedAccessKey
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
+| 2017-03-30  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.commandToExecute
 
-| API version        | Detected noise type | Determined noise type                                 |
-| ------------------ | ------------------- | ----------------------------------------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
-| 2015-06-15         | Unknown             | Put-as-patch                                          |
-| 2017-03-30         | Unknown             | Put-as-patch                                          |
-| 2018-06-01         | Unknown             | Put-as-patch                                          |
-| 2019-03-01         | Unknown             | Put-as-patch                                          |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger            |
+| 2015-06-15         | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-12-01         | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configuration.function
 
-| API version        | Detected noise type | Determined noise type                                 |
-| ------------------ | ------------------- | ----------------------------------------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2017-12-01) |
-| 2017-12-01         | Unknown             | Put-as-patch                                          |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger            |
+| 2017-12-01         | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configuration.script
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configuration.url
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.CNNamePrefix
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.CNSize
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.CertificateUrl
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.DomainName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.LinuxCommOverHttp
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Default* (true)     | Put-as-patch          |
+| 2017-12-01  | Default* (true)     | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.Location
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.RegistrationUrl
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.ResourceGroup
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.SSLThumbprint
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.Subnet
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.SubscriptionId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.Timestamp
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.VNet
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.VaultResourceGroup
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.configurationArguments.sharedAccessKeyValue
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.fileUris
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.fileUris[*]
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.hints.platform
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger            |
+
+### \$.properties.settings.hints.vm_name
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger            |
 
 ### \$.properties.settings.networkInterface
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.properties.CatalogMachine
 
@@ -969,83 +1109,100 @@ Legend of noise types:
 | ------------------ | ------------------- | --------------------- |
 | 2015-05-01-preview | Unknown             | No Swagger            |
 
+### \$.properties.settings.properties.registrationInfoToken
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | No Swagger            |
+
+### \$.properties.settings.secretsManagementSettings.observedCertificates[*]
+
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+
 ### \$.properties.settings.timestamp
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
 
 ### \$.properties.settings.workspaceId
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2017-12-01  | Unknown             | Put-as-patch          |
-| 2018-06-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2017-03-30  | Unknown             | No Swagger            |
+| 2017-12-01  | Unknown             | No Swagger            |
+| 2018-06-01  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
+| 2019-03-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
+| 2019-12-01  | Unknown             | No Swagger            |
 
 ### \$.properties.type
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
+| 2019-07-01  | Unknown             | No Swagger            |
 
 ### \$.properties.typeHandlerVersion
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2015-06-15  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2015-06-15  | Unknown             | No Swagger            |
+| 2018-10-01  | Unknown             | No Swagger            |
 
 ### \$.tags
 
-| API version        | Detected noise type | Determined noise type                                 |
-| ------------------ | ------------------- | ----------------------------------------------------- |
-| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
-| 2015-06-15         | Unknown             | Put-as-patch                                          |
-| 2016-03-30         | Unknown             | Put-as-patch                                          |
-| 2017-03-30         | Unknown             | Put-as-patch                                          |
-| 2017-12-01         | Unknown             | Put-as-patch                                          |
-| 2018-06-01         | Unknown             | Put-as-patch                                          |
-| 2018-10-01         | Unknown             | Put-as-patch                                          |
-| 2019-03-01         | Unknown             | Put-as-patch                                          |
-| 2019-07-01         | Unknown             | Put-as-patch                                          |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger            |
+| 2015-06-15         | Unknown             | No Swagger            |
+| 2016-03-30         | Unknown             | No Swagger            |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2017-12-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
+| 2019-12-01         | Unknown             | No Swagger            |
 
 ### \$.tags.*
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
-| 2015-06-15         | Unknown             | Put-as-patch          |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
-| 2017-03-30         | Unknown             | Put-as-patch          |
-| 2018-06-01         | Unknown             | Put-as-patch          |
-| 2018-10-01         | Unknown             | Put-as-patch          |
-| 2019-07-01         | Unknown             | Put-as-patch          |
+| 2015-06-15         | Unknown             | No Swagger            |
+| 2016-03-30         | Unknown             | No Swagger            |
+| 2016-04-30-preview | Unknown             | No Swagger            |
+| 2017-03-30         | Unknown             | No Swagger            |
+| 2017-12-01         | Unknown             | No Swagger            |
+| 2018-06-01         | Unknown             | No Swagger            |
+| 2018-10-01         | Unknown             | No Swagger            |
+| 2019-03-01         | Unknown             | No Swagger            |
+| 2019-07-01         | Unknown             | No Swagger            |
 
 ## virtualMachines
 
-![98.59%25](https://img.shields.io/badge/98.59%25-%E2%98%85★★★★★★★★★-brightgreen)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-brightgreen) ![progress](https://img.shields.io/badge/progress-100.00%25%20(412%20/%20412)-brightgreen)
 
 ### \$.identity
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Unknown               |
-| 2018-04-01  | Unknown             | Unknown               |
-| 2018-06-01  | Unknown             | Unknown               |
-| 2018-10-01  | Unknown             | Unknown               |
-| 2019-03-01  | Unknown             | Unknown               |
+| 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 
 ### \$.identity.*
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | No Swagger            |
+| API version | Detected noise type         | Determined noise type |
+| ----------- | --------------------------- | --------------------- |
+| 2018-06-01  | Default* ("SystemAssigned") | Put-as-patch          |
 
 ### \$.plan
 
@@ -1085,6 +1242,12 @@ Legend of noise types:
 | 2017-03-30         | Unknown             | Put-as-patch          |
 | 2017-12-01         | Unknown             | Put-as-patch          |
 | 2018-10-01         | Unknown             | Put-as-patch          |
+
+### \$.properties.availabilitySet.id
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.billingProfile
 
@@ -1136,6 +1299,7 @@ Legend of noise types:
 | 2019-03-01         | Unknown             | Put-as-patch          |
 | 2019-07-01         | Unknown             | Put-as-patch          |
 | 2019-12-01         | Unknown             | Put-as-patch          |
+| 2020-06-01         | Unknown             | Put-as-patch          |
 
 ### \$.properties.evictionPolicy
 
@@ -1206,7 +1370,15 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2017-03-30  | Unknown             | Put-as-patch          |
+| 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.networkProfile.networkInterfaces[*].properties.enableAcceleratedNetworking
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-04-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.networkProfile.networkInterfaces[*].properties.primary
 
@@ -1223,6 +1395,12 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2017-03-30  | Unknown             | Put-as-patch          |
 | 2017-12-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.osProfile.AdminPassword
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-03-30  | Unknown             | Put-as-patch          |
 
 ### \$.properties.osProfile.WindowsConfiguration
 
@@ -1250,16 +1428,6 @@ Legend of noise types:
 | 2019-03-01         | Unknown             | Put-as-patch          |
 | 2019-12-01         | Unknown             | Put-as-patch          |
 
-### \$.properties.osProfile.allowExtensionOperations
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Default (true)      | Put-as-patch          |
-| 2018-10-01  | Default (true)      | Put-as-patch          |
-| 2019-03-01  | Default (true)      | Put-as-patch          |
-| 2019-07-01  | Default (true)      | Put-as-patch          |
-| 2019-12-01  | Default (true)      | Put-as-patch          |
-
 ### \$.properties.osProfile.computerName
 
 | API version        | Detected noise type | Determined noise type |
@@ -1286,12 +1454,6 @@ Legend of noise types:
 | 2018-06-01         | Unknown             | Put-as-patch          |
 | 2018-10-01         | Unknown             | Put-as-patch          |
 | 2019-03-01         | Unknown             | Put-as-patch          |
-
-### \$.properties.osProfile.customData
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2016-03-30  | Unknown             | Put-as-patch          |
 
 ### \$.properties.osProfile.linuxConfiguration
 
@@ -1325,15 +1487,6 @@ Legend of noise types:
 | 2019-03-01         | Unknown             | Put-as-patch                                          |
 | 2019-07-01         | Unknown             | Put-as-patch                                          |
 | 2019-12-01         | Unknown             | Put-as-patch                                          |
-
-### \$.properties.osProfile.linuxConfiguration.provisionVMAgent
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Default (true)      | Put-as-patch          |
-| 2018-10-01  | Default (true)      | Put-as-patch          |
-| 2019-03-01  | Default (true)      | Put-as-patch          |
-| 2019-07-01  | Default (true)      | Put-as-patch          |
 
 ### \$.properties.osProfile.linuxConfiguration.ssh
 
@@ -1389,15 +1542,13 @@ Legend of noise types:
 
 ### \$.properties.osProfile.windowsConfiguration.additionalUnattendContent[*].content
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
-| 2017-03-30         | Unknown             | Put-as-patch          |
-| 2017-12-01         | Unknown             | Put-as-patch          |
-| 2018-04-01         | Unknown             | Put-as-patch          |
-| 2018-06-01         | Unknown             | Put-as-patch          |
-| 2019-03-01         | Unknown             | Put-as-patch          |
-| 2019-07-01         | Unknown             | Put-as-patch          |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-03-30  | Unknown             | Put-as-patch          |
+| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.osProfile.windowsConfiguration.enableAutomaticUpdates
 
@@ -1414,22 +1565,6 @@ Legend of noise types:
 | 2019-03-01         | Unknown             | Put-as-patch                                          |
 | 2019-07-01         | Unknown             | Put-as-patch                                          |
 | 2019-12-01         | Unknown             | Put-as-patch                                          |
-
-### \$.properties.osProfile.windowsConfiguration.provisionVMAgent
-
-| API version        | Detected noise type | Determined noise type                                 |
-| ------------------ | ------------------- | ----------------------------------------------------- |
-| 2015-06-15         | Default (true)      | Put-as-patch                                          |
-| 2016-03-30         | Default (true)      | Put-as-patch                                          |
-| 2016-04-30-preview | Default (true)      | Put-as-patch                                          |
-| 2016-08-30         | Default (true)      | No Swagger, Put-as-patch (inheritted from 2017-03-30) |
-| 2017-03-30         | Default (true)      | Put-as-patch                                          |
-| 2017-12-01         | Default (true)      | Put-as-patch                                          |
-| 2018-04-01         | Default (true)      | Put-as-patch                                          |
-| 2018-06-01         | Default (true)      | Put-as-patch                                          |
-| 2018-10-01         | Default (true)      | Put-as-patch                                          |
-| 2019-03-01         | Default (true)      | Put-as-patch                                          |
-| 2019-07-01         | Default (true)      | Put-as-patch                                          |
 
 ### \$.properties.osProfile.windowsConfiguration.provisionVmAgent
 
@@ -1521,6 +1656,7 @@ Legend of noise types:
 | 2019-03-01         | Unknown             | Put-as-patch          |
 | 2019-07-01         | Unknown             | Put-as-patch          |
 | 2019-12-01         | Unknown             | Put-as-patch          |
+| 2020-06-01         | Unknown             | Put-as-patch          |
 
 ### \$.properties.storageProfile.dataDisks[*].createOption
 
@@ -1578,15 +1714,16 @@ Legend of noise types:
 
 ### \$.properties.storageProfile.dataDisks[*].managedDisk.storageAccountType
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2017-12-01  | Unknown             | Put-as-patch          |
-| 2018-04-01  | Unknown             | Put-as-patch          |
-| 2018-06-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2017-03-30         | Unknown             | Put-as-patch          |
+| 2017-12-01         | Unknown             | Put-as-patch          |
+| 2018-04-01         | Unknown             | Put-as-patch          |
+| 2018-06-01         | Unknown             | Put-as-patch          |
+| 2018-10-01         | Unknown             | Put-as-patch          |
+| 2019-03-01         | Unknown             | Put-as-patch          |
+| 2019-07-01         | Unknown             | Put-as-patch          |
 
 ### \$.properties.storageProfile.dataDisks[*].name
 
@@ -1601,6 +1738,7 @@ Legend of noise types:
 | 2019-03-01         | Unknown             | Put-as-patch          |
 | 2019-07-01         | Unknown             | Put-as-patch          |
 | 2019-12-01         | Unknown             | Put-as-patch          |
+| 2020-06-01         | Unknown             | Put-as-patch          |
 
 ### \$.properties.storageProfile.dataDisks[*].toBeDetached
 
@@ -1624,6 +1762,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2017-12-01  | Default* (false)    | Put-as-patch          |
 | 2018-06-01  | Default* (false)    | Put-as-patch          |
 | 2019-03-01  | Default* (false)    | Put-as-patch          |
 
@@ -1667,18 +1806,6 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-10-01  | Unknown             | Put-as-patch          |
-
-### \$.properties.storageProfile.imageReference.offer
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
-
-### \$.properties.storageProfile.imageReference.publisher
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.storageProfile.imageReference.sku
@@ -1687,12 +1814,6 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
-
-### \$.properties.storageProfile.imageReference.version
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.storageProfile.osDisk
 
@@ -1777,6 +1898,7 @@ Legend of noise types:
 
 | API version        | Detected noise type | Determined noise type |
 | ------------------ | ------------------- | --------------------- |
+| 2015-06-15         | Unknown             | Put-as-patch          |
 | 2016-04-30-preview | Unknown             | Put-as-patch          |
 
 ### \$.properties.storageProfile.osDisk.managedDisk
@@ -1860,16 +1982,18 @@ Legend of noise types:
 
 ### \$.properties.storageProfile.osDisk.vhd.uri
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2015-06-15         | Unknown             | Put-as-patch          |
-| 2016-03-30         | Unknown             | Put-as-patch          |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
-| 2017-03-30         | Unknown             | Put-as-patch          |
-| 2017-12-01         | Unknown             | Put-as-patch          |
-| 2018-06-01         | Unknown             | Put-as-patch          |
-| 2019-03-01         | Unknown             | Put-as-patch          |
-| 2019-07-01         | Unknown             | Put-as-patch          |
+| API version        | Detected noise type | Determined noise type                                 |
+| ------------------ | ------------------- | ----------------------------------------------------- |
+| 2015-05-01-preview | Unknown             | No Swagger, Put-as-patch (inheritted from 2015-06-15) |
+| 2015-06-15         | Unknown             | Put-as-patch                                          |
+| 2016-03-30         | Unknown             | Put-as-patch                                          |
+| 2016-04-30-preview | Unknown             | Put-as-patch                                          |
+| 2017-03-30         | Unknown             | Put-as-patch                                          |
+| 2017-12-01         | Unknown             | Put-as-patch                                          |
+| 2018-06-01         | Unknown             | Put-as-patch                                          |
+| 2019-03-01         | Unknown             | Put-as-patch                                          |
+| 2019-07-01         | Unknown             | Put-as-patch                                          |
+| 2019-12-01         | Unknown             | Put-as-patch                                          |
 
 ### \$.properties.storageProfile.osDisk.writeAcceleratorEnabled
 
@@ -1910,6 +2034,7 @@ Legend of noise types:
 | 2018-10-01         | Unknown             | Put-as-patch                                          |
 | 2019-03-01         | Unknown             | Put-as-patch                                          |
 | 2019-07-01         | Unknown             | Put-as-patch                                          |
+| 2020-06-01         | Unknown             | Put-as-patch                                          |
 
 ### \$.zones
 
@@ -1920,7 +2045,7 @@ Legend of noise types:
 
 ## virtualMachineScaleSets/extensions
 
-![100.00%25](https://img.shields.io/badge/100.00%25-%E2%98%85★★★★★★★★★-brightgreen)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-brightgreen) ![progress](https://img.shields.io/badge/progress-100.00%25%20(13%20/%2013)-brightgreen)
 
 ### \$.location
 
@@ -1932,7 +2057,6 @@ Legend of noise types:
 | 2018-06-01  | Unknown             | Put-as-patch                                          |
 | 2018-10-01  | Unknown             | Put-as-patch                                          |
 | 2019-03-01  | Unknown             | Put-as-patch                                          |
-| 2019-07-01  | Unknown             | Put-as-patch                                          |
 
 ### \$.properties.autoUpgradeMinorVersion
 
@@ -1946,6 +2070,7 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-10-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.settings.timestamp
 
@@ -1962,7 +2087,7 @@ Legend of noise types:
 
 ## virtualMachineScaleSets
 
-![100.00%25](https://img.shields.io/badge/100.00%25-%E2%98%85★★★★★★★★★-brightgreen)
+![cleanliness](https://img.shields.io/badge/cleanliness-unknown-brightgreen) ![progress](https://img.shields.io/badge/progress-100.00%25%20(492%20/%20492)-brightgreen)
 
 ### \$.identity
 
@@ -1996,14 +2121,6 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-10-01  | Unknown             | Put-as-patch          |
-
-### \$.properties.doNotRunExtensionsOnOverprovisionedVMs
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Default (false)     | Put-as-patch          |
-| 2019-03-01  | Default (false)     | Put-as-patch          |
-| 2019-07-01  | Default (false)     | Put-as-patch          |
 
 ### \$.properties.orchestrationMode
 
@@ -2084,14 +2201,6 @@ Legend of noise types:
 | 2018-04-01  | Unknown             | Put-as-patch          |
 | 2018-06-01  | Unknown             | Put-as-patch          |
 
-### \$.properties.upgradePolicy.automaticOSUpgradePolicy.disableAutomaticRollback
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Default (false)     | Put-as-patch          |
-| 2019-03-01  | Default (false)     | Put-as-patch          |
-| 2019-07-01  | Default (false)     | Put-as-patch          |
-
 ### \$.properties.upgradePolicy.automaticOSUpgradePolicy.enableAutomaticOSUpgrade
 
 | API version | Detected noise type | Determined noise type |
@@ -2169,13 +2278,14 @@ Legend of noise types:
 | 2017-12-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.evictionPolicy
 
-| API version | Detected noise type    | Determined noise type |
-| ----------- | ---------------------- | --------------------- |
-| 2017-12-01  | Default ("Deallocate") | Put-as-patch          |
-| 2019-07-01  | Default ("Deallocate") | Put-as-patch          |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-12-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile
 
@@ -2203,33 +2313,29 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-04-01  | Unknown             | Put-as-patch          |
 | 2018-06-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
-| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].location
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-04-01  | Unknown             | Put-as-patch          |
 | 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].name
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.autoUpgradeMinorVersion
 
@@ -2238,9 +2344,11 @@ Legend of noise types:
 | 2017-03-30  | Unknown             | Put-as-patch          |
 | 2017-12-01  | Unknown             | Put-as-patch          |
 | 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.enableAutomaticUpgrade
 
@@ -2250,12 +2358,12 @@ Legend of noise types:
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.forceUpdateTag
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
@@ -2275,10 +2383,16 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.provisionAfterExtensions
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.provisionAfterExtensions[*]
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
@@ -2289,31 +2403,31 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-04-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.AntimalwareEnabled
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Default (true)      | Put-as-patch          |
-| 2019-07-01  | Default (true)      | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.EncryptionOperation
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
@@ -2321,7 +2435,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.KekVaultResourceId
@@ -2334,7 +2448,6 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
@@ -2348,7 +2461,6 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
@@ -2356,8 +2468,6 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
@@ -2371,20 +2481,22 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Default (true)      | Put-as-patch          |
-| 2019-07-01  | Default (true)      | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.ResizeOSDisk
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Default* (false)    | Put-as-patch          |
-| 2019-07-01  | Default* (false)    | Put-as-patch          |
+| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.ScheduledScanSettings
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
@@ -2392,19 +2504,21 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.UserName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-10-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.VolumeType
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
@@ -2412,13 +2526,17 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.WadCfg.SinksConfig.Sink[*].ApplicationInsights
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2017-03-30  | Unknown             | Put-as-patch          |
 | 2018-06-01  | Unknown             | Put-as-patch          |
+| 2018-10-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.authenticationSettings.msiClientId
 
@@ -2432,33 +2550,52 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.certificate
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
+
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.certificate.thumbprint
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2017-03-30  | Unknown             | Put-as-patch          |
 
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.certificateSecondary
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.clusterEndpoint
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
-| 2017-03-30         | Unknown             | Put-as-patch          |
-| 2017-12-01         | Unknown             | Put-as-patch          |
-| 2018-04-01         | Unknown             | Put-as-patch          |
-| 2018-06-01         | Unknown             | Put-as-patch          |
-| 2018-10-01         | Unknown             | Put-as-patch          |
-| 2019-03-01         | Unknown             | Put-as-patch          |
-| 2019-07-01         | Unknown             | Put-as-patch          |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.commandToExecute
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2017-12-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.configurationArguments.RegistrationUrl
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.configurationArguments.clientId
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.configurationArguments.uniqueString
 
@@ -2478,17 +2615,42 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-06-01  | Unknown             | Put-as-patch          |
 
-### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.fileUris
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.dataPath
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.durabilityLevel
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.enableParallelJobs
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-10-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.fileUris
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.fileUris[*]
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.forceUpdateTag
 
@@ -2496,31 +2658,43 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2018-04-01  | Unknown             | Put-as-patch          |
 
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.modulesUrl
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.nicPrefixOverride
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.nodeTypeRef
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.port
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Default (443)       | Put-as-patch          |
-| 2019-07-01  | Default (443)       | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.protocol
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.requestPath
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.settings.roles[*]
@@ -2552,27 +2726,29 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.type
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.extensionProfile.extensions[*].properties.typeHandlerVersion
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2018-04-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+| 2019-12-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.licenseType
 
@@ -2609,6 +2785,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations[*].name
@@ -2736,27 +2913,29 @@ Legend of noise types:
 
 ### \$.properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations[*].properties.ipConfigurations[*].properties.privateIPAllocationMethod
 
-| API version        | Detected noise type | Determined noise type |
-| ------------------ | ------------------- | --------------------- |
-| 2016-04-30-preview | Unknown             | Put-as-patch          |
-| 2017-03-30         | Unknown             | Put-as-patch          |
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2017-03-30  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations[*].properties.ipConfigurations[*].properties.publicIPAddressConfiguration
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-06-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
+
+### \$.properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations[*].properties.ipConfigurations[*].properties.publicIPAddressConfiguration.properties.idleTimeoutInMinutes
+
+| API version | Detected noise type | Determined noise type |
+| ----------- | ------------------- | --------------------- |
+| 2018-10-01  | Default* (4)        | Put-as-patch          |
+| 2019-07-01  | Default* (4)        | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations[*].properties.ipConfigurations[*].properties.publicIPAddressConfiguration.properties.publicIPAddressVersion
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2019-07-01  | Default* ("IPv4")   | Put-as-patch          |
-| 2019-12-01  | Default* ("IPv4")   | Put-as-patch          |
+| 2019-07-01  | Default ("IPv4")    | Put-as-patch          |
+| 2019-12-01  | Default ("IPv4")    | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations[*].properties.ipConfigurations[*].properties.publicIpAddressConfiguration
 
@@ -2778,6 +2957,7 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2017-12-01  | Unknown             | Put-as-patch          |
+| 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
@@ -2786,7 +2966,7 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.networkProfile.networkInterfaceConfigurations[*].properties.primary
 
@@ -2868,13 +3048,19 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.osProfile.dsmsConfiguration.certificates[*].storeName
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
+| 2018-06-01  | Unknown             | Put-as-patch          |
+| 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.osProfile.linuxConfiguration
 
@@ -2898,15 +3084,6 @@ Legend of noise types:
 | 2018-10-01  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
-
-### \$.properties.virtualMachineProfile.osProfile.linuxConfiguration.provisionVMAgent
-
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2018-06-01  | Default (true)      | Put-as-patch          |
-| 2018-10-01  | Default (true)      | Put-as-patch          |
-| 2019-03-01  | Default (true)      | Put-as-patch          |
-| 2019-07-01  | Default (true)      | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.osProfile.linuxConfiguration.ssh
 
@@ -2932,14 +3109,15 @@ Legend of noise types:
 
 ### \$.properties.virtualMachineProfile.osProfile.secrets[*].vaultCertificates[*].certificateUrl
 
-| API version | Detected noise type | Determined noise type |
-| ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-04-01  | Unknown             | Put-as-patch          |
-| 2018-06-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
-| 2019-07-01  | Unknown             | Put-as-patch          |
+| API version        | Detected noise type | Determined noise type |
+| ------------------ | ------------------- | --------------------- |
+| 2016-04-30-preview | Unknown             | Put-as-patch          |
+| 2017-03-30         | Unknown             | Put-as-patch          |
+| 2018-04-01         | Unknown             | Put-as-patch          |
+| 2018-06-01         | Unknown             | Put-as-patch          |
+| 2018-10-01         | Unknown             | Put-as-patch          |
+| 2019-03-01         | Unknown             | Put-as-patch          |
+| 2019-07-01         | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.osProfile.windowsConfiguration
 
@@ -3040,6 +3218,7 @@ Legend of noise types:
 | ----------- | ------------------- | --------------------- |
 | 2017-03-30  | Unknown             | Put-as-patch          |
 | 2019-03-01  | Unknown             | Put-as-patch          |
+| 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.storageProfile.dataDisks[*].managedDisk
 
@@ -3125,7 +3304,6 @@ Legend of noise types:
 | 2017-03-30  | Unknown             | Put-as-patch          |
 | 2018-06-01  | Unknown             | Put-as-patch          |
 | 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.virtualMachineProfile.storageProfile.osDisk.vhdContainers[*]
@@ -3133,7 +3311,7 @@ Legend of noise types:
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
 | 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-04-01  | Unknown             | Put-as-patch          |
+| 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.properties.zoneBalance
@@ -3190,10 +3368,6 @@ Legend of noise types:
 
 | API version | Detected noise type | Determined noise type |
 | ----------- | ------------------- | --------------------- |
-| 2017-03-30  | Unknown             | Put-as-patch          |
-| 2018-06-01  | Unknown             | Put-as-patch          |
-| 2018-10-01  | Unknown             | Put-as-patch          |
-| 2019-03-01  | Unknown             | Put-as-patch          |
 | 2019-07-01  | Unknown             | Put-as-patch          |
 
 ### \$.zones
